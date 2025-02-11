@@ -1,0 +1,127 @@
+.header_outer_container {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.header_container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_left ul,
+.header_right ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.header_left ul li,
+.header_right ul li {
+  color: white;
+  margin: 0 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.header_left ul li:hover,
+.header_right ul li:hover {
+  color: #e50914; /* Netflix Red */
+}
+
+.header_left ul li img {
+  display: block;
+  width: 100px;
+}
+
+@media (max-width: 768px) {
+  .header_container {
+    flex-direction: column;
+  }
+
+  .header_left ul,
+  .header_right ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header_left ul li,
+  .header_right ul li {
+    margin: 10px 0;
+  }
+}
+
+/* ******************* */
+/* .header-outer-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  transition: all 0.5s ease-in;
+  z-index: 1000;
+  background-color: transparent;
+}
+
+/* Main header container */
+.header-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Left section - Netflix logo & menu */
+.header-left ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 20px; /* Space between items */
+}
+
+.header-left ul li {
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.header-left ul li:hover {
+  color: red;
+}
+
+/* Right section - Icons */
+.header-right ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Netflix logo */
+.header-left ul li img {
+  width: 100px;
+  cursor: pointer;
+}
+
+/* User profile icon */
+.header-right ul li:last-child {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
