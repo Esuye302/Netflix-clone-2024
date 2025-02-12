@@ -1,0 +1,30 @@
+.row{
+    margin-left: 20px;
+    color: white;
+}
+.movie-row {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 10px;
+  cursor: pointer;
+}
+.movie-row::-webkit-scrollbar {
+  display: none;
+  /* to hide the srollbar in browser */
+}
+.movie-poster {
+  flex: 0 0 auto;
+  width: 200px;
+  height: auto;
+  margin-right: 10px;
+  transition: transform 0.2s;
+}
+
+.movie-poster:hover {
+  transform: scale(1.05);
+}
+.movie-poster.large {
+  width: 200px;
+}
